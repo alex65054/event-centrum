@@ -82,7 +82,7 @@ footer>div {
     padding: 10px;
 }
 
-#contact-info-container a {
+#contact-info-container a,#contact-info-container p {
     font-size: 1.75rem;
     margin: 0;
     color: white;
