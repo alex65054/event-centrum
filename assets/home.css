@@ -3,7 +3,7 @@
 #main-heading {
     width: 100%;
     height: 110vh;
-    background: url(/assets/images/Special.jpg);
+    background: url(./images/Special.jpg);
     background-size: cover;
     display: flex;
     color: white;
