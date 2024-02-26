@@ -1,0 +1,178 @@
+/* Main heading */
+
+#main-heading {
+    width: 100%;
+    height: 110vh;
+    background: url(/assets/images/Special.jpg);
+    background-size: cover;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    box-shadow: 0 5px 5px black;
+    z-index: 1;
+    position: relative;
+}
+
+#main-heading h1 {
+    font-size: 4.5rem;
+    max-width: 90%;
+}
+
+#main-heading a {
+    position: relative;
+    top: 30%;
+    font-size: 3rem;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border: 3px solid white;
+    transition-property: color border;
+    transition-duration: 100ms;
+}
+
+#main-heading a:hover {
+    color: rgb(220, 220, 220);
+    border: 3px solid rgb(220, 220, 220);
+    margin-bottom: 0;
+}
+
+
+
+/* About us & prompts */
+
+#about-container {
+    display: flex;
+}
+
+#about-container>* {
+    width: 50%;
+    box-sizing: border-box;
+}
+
+
+/* Left side */
+
+#about-us {
+    background-color: #76d1ff;
+    color: white;
+    padding: 80px;
+    padding-right: 160px;
+}
+
+#about-us h2 {
+    font-size: 5rem;
+}
+
+#about-us p {
+    font-size: 1.75rem;
+    margin: 2rem 0;
+}
+
+
+/* Right side */
+
+#about-prompts {
+    color: #3e3e3e;
+    padding: 80px;
+}
+
+#about-prompts article {
+    margin: auto;
+}
+
+#about-prompts img {
+    height: 120px;
+}
+
+#about-prompts article>div {
+    display: inline-block;
+    width: 75%;
+    margin: 25px;
+}
+
+#about-prompts h6 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+#about-prompts p {
+    font-size: 1.25rem;
+}
+
+@media only screen and (max-width: 1200px) {
+    
+    /* About outer container */
+
+    #about-container {
+        flex-direction: column;
+    }
+    
+    #about-container>* {
+        width: 100%;
+    }
+
+    /* Bottom container */
+
+    #about-prompts img {
+        height: 90px;
+    }
+
+    #about-prompts {
+        padding: 40px;
+    }
+
+}
+
+@media only screen and (max-width: 700px) { 
+
+    /* Main heading */
+
+    #main-heading {
+        height: 80vh;
+    }
+
+    #main-heading h1 {
+        font-size: 4rem;
+    }
+
+    #main-heading a {
+        top: 15%;
+    }
+
+
+    /* About top container */
+
+    #about-us {
+        padding: 40px;
+    }
+
+    #about-us h2 {
+        font-size: 4rem;
+    }
+    
+    #about-us p {
+        font-size: 1.5rem;
+    }
+
+
+    /* About bottom container */
+
+    #about-prompts {
+        padding: 40px;
+    }
+
+    #about-prompts article>div {
+        width: calc(90% - 100px);
+        margin-top: 0;
+    }
+
+    #about-prompts article img {
+        height: auto;
+        vertical-align: top;
+    }
+
+}
