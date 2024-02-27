@@ -5,6 +5,7 @@
     height: 110vh;
     background: url(./images/Special.jpg);
     background-size: cover;
+    background-position: center;
     display: flex;
     color: white;
     justify-content: center;
