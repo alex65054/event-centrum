@@ -83,6 +83,7 @@ footer>div {
 }
 
 #contact-info-container a,#contact-info-container p {
+    /* Skal også addressere anchor links her fordi Safari er en lortebrowser */
     font-size: 1.75rem;
     margin: 0;
     color: white;
@@ -117,7 +118,7 @@ footer>div {
 
 #contact-box input,textarea {
     display: block;
-    background-color: #2c3640;
+    background-color: transparent;
     border-color: 3px solid #E6E7E8;
     color: #E6E7E8;
     padding: 15px;
@@ -323,7 +324,7 @@ main {
         font-size: 1rem;
     }
 
-    #contact-info-container a {
+    #contact-info-container a,#contact-info-container p {
         font-size: 1.25rem;
     }
 
